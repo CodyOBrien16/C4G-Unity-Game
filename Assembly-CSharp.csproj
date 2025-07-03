@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scipts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scipts\PortalSwitch.cs" />
     <Compile Include="Assets\PlayerControls.cs" />
   </ItemGroup>
   <ItemGroup>
