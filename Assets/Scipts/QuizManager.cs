@@ -1,108 +1,52 @@
-using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using System.Collections.Generic;
 
-[System.Serializable]
-public class Question
+public class QuizManager : MonoBehaviour
 {
-    public string questionText;
-    public string[] answers = new string[4];
-    public int correctAnswerIndex;
-}
+    public QuestionLoader loader; // Drag this in Inspector
+    public TMP_Text questionText;
+    public Button[] answerButtons;
 
-public class QuestionLoader : MonoBehaviour
-{
-    public List<Question> loadedQuestions = new List<Question>();
+    private List<Question> questions;
+    private int currentIndex = 0;
 
-    void Awake()
+    void Start()
     {
-        LoadQuestionsFromCSV("lsd_questions.csv");
+        questions = loader.loadedQuestions;
+        Debug.Log($"Starting quiz with {questions.Count} questions.");
+        LoadQuestion();
     }
 
-    void LoadQuestionsFromCSV(string fileName)
+    void LoadQuestion()
     {
-        string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
-
-        if (File.Exists(filePath))
+        if (currentIndex >= questions.Count)
         {
-            string[] lines = File.ReadAllLines(filePath);
-
-            for (int i = 1; i < lines.Length; i++) // Skip header
-            {
-                string[] parts = SplitCSVLine(lines[i]);
-
-                if (parts.Length == 5)
-                {
-                    Question q = new Question();
-                    q.questionText = parts[0];
-                    q.answers[0] = parts[1]; // correct
-                    q.answers[1] = parts[2];
-                    q.answers[2] = parts[3];
-                    q.answers[3] = parts[4];
-
-                    ShuffleAnswers(q);
-                    loadedQuestions.Add(q);
-                }
-            }
-
-            Debug.Log("Loaded " + loadedQuestions.Count + " questions.");
+            questionText.text = "Quiz complete!";
+            return;
         }
-        else
+
+        Question q = questions[currentIndex];
+        Debug.Log("Loading question: " + q.questionText);
+        questionText.text = q.questionText;
+
+        for (int i = 0; i < answerButtons.Length; i++)
         {
-            Debug.LogError("CSV file not found at: " + filePath);
+            answerButtons[i].GetComponentInChildren<TMP_Text>().text = q.answers[i];
+
+            int selected = i; // capture loop variable
+            answerButtons[i].onClick.RemoveAllListeners();
+            answerButtons[i].onClick.AddListener(() => OnAnswerSelected(selected));
         }
     }
 
-    string[] SplitCSVLine(string line)
+    void OnAnswerSelected(int index)
     {
-        List<string> tokens = new List<string>();
-        bool insideQuotes = false;
-        string currentToken = "";
+        Question q = questions[currentIndex];
+        Debug.Log(index == q.correctAnswerIndex ? "Correct!" : "Incorrect!");
 
-        foreach (char c in line)
-        {
-            if (c == '"' && !insideQuotes)
-            {
-                insideQuotes = true;
-            }
-            else if (c == '"' && insideQuotes)
-            {
-                insideQuotes = false;
-            }
-            else if (c == ',' && !insideQuotes)
-            {
-                tokens.Add(currentToken);
-                currentToken = "";
-            }
-            else
-            {
-                currentToken += c;
-            }
-        }
-
-        tokens.Add(currentToken); // Add the last token
-        return tokens.ToArray();
-    }
-
-    void ShuffleAnswers(Question q)
-    {
-        string correctAnswer = q.answers[0];
-        System.Random rng = new System.Random();
-
-        for (int i = q.answers.Length - 1; i > 0; i--)
-        {
-            int j = rng.Next(i + 1);
-            (q.answers[i], q.answers[j]) = (q.answers[j], q.answers[i]);
-        }
-
-        // Update correct index
-        for (int i = 0; i < q.answers.Length; i++)
-        {
-            if (q.answers[i] == correctAnswer)
-            {
-                q.correctAnswerIndex = i;
-                break;
-            }
-        }
+        currentIndex++;
+        Invoke("LoadQuestion", 1.5f); // Delay to show result
     }
 }
