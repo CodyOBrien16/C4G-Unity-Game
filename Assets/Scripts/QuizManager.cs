@@ -23,7 +23,23 @@ public class QuizManager : MonoBehaviour
     {
         if (currentIndex >= questions.Count)
         {
-            UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2");
+            string pathTag = PlayerPrefs.GetString("NextLevelTag", "default");
+
+            switch (pathTag)
+            {
+                case "Level 2 Saliva":
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2 Saliva");
+                    break;
+                case "Level 3":
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 3");
+                    break;
+                case "Level 4":
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 4");
+                    break;
+                default:
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1 LSD"); // fallback
+                    break;
+            }
             return;
         }
 
