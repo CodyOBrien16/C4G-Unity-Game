@@ -30,8 +30,8 @@ public class QuizManager : MonoBehaviour
                 case "Level 2 Saliva":
                     UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2 Saliva");
                     break;
-                case "Level 3":
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 3");
+                case "Level 3 Ecstasy":
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 3 Ecstasy");
                     break;
                 case "Level 4":
                     UnityEngine.SceneManagement.SceneManager.LoadScene("Level 4");

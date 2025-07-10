@@ -423,7 +423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Arena
   csvFileName: salvia_questions.csv
-  portalTag: Level 3
+  portalTag: Level 3 Ecstasy
 --- !u!70 &618273739
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

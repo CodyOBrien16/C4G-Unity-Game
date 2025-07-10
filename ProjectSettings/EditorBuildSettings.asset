@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 2 Saliva.unity
     guid: d3e549e82ec9c29468c7a632801cef8e
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
+    path: Assets/Scenes/Level 3 Ecstasy.unity
     guid: 9f58eec6c9e93e64eb0fd34adddba213
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 767562df317243b46bdf669c5546c211, type: 3}
