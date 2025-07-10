@@ -422,6 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Arena
+  csvFileName: lsd_questions.csv
 --- !u!70 &618273739
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

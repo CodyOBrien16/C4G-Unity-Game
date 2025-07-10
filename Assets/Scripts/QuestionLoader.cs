@@ -16,7 +16,8 @@ public class QuestionLoader : MonoBehaviour
 
     void Awake()
     {
-        LoadCSV("lsd_questions.csv");
+        string selectedFile = PlayerPrefs.GetString("SelectedCSV", "default.csv");
+        LoadCSV(selectedFile);
     }
 
     void LoadCSV(string fileName)
