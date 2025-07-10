@@ -23,7 +23,7 @@ public class QuizManager : MonoBehaviour
     {
         if (currentIndex >= questions.Count)
         {
-            questionText.text = "Quiz complete!";
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2");
             return;
         }
 
