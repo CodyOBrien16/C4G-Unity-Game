@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Arena.unity
     guid: 129e66b0a0a531d4a827969fba7d165c
   - enabled: 1
-    path: Assets/Scenes/Level 2 Saliva.unity
+    path: Assets/Scenes/Level 2 Salvia.unity
     guid: d3e549e82ec9c29468c7a632801cef8e
   - enabled: 1
     path: Assets/Scenes/Level 3 Ecstasy.unity
