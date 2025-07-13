@@ -28,7 +28,7 @@ public class QuizManager : MonoBehaviour
             switch (pathTag)
             {
                 case "Level 2 Saliva":
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2 Saliva");
+                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2 Salvia");
                     break;
                 case "Level 3 Ecstasy":
                     UnityEngine.SceneManagement.SceneManager.LoadScene("Level 3 Ecstasy");
