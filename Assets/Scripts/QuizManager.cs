@@ -11,6 +11,7 @@ public class QuizManager : MonoBehaviour
 
     private List<Question> questions;
     private int currentIndex = 0;
+    private int correctAnswers = 0;
 
     void Start()
     {
@@ -23,24 +24,33 @@ public class QuizManager : MonoBehaviour
     {
         if (currentIndex >= questions.Count)
         {
-            string pathTag = PlayerPrefs.GetString("NextLevelTag", "default");
-
-            switch (pathTag)
+            Debug.Log("Quiz completed!");
+            if (correctAnswers >= 3)
             {
-                case "Level 2 Saliva":
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2 Salvia");
-                    break;
-                case "Level 3 Ecstasy":
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 3 Ecstasy");
-                    break;
-                case "Level 4":
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 4");
-                    break;
-                default:
-                    UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1 LSD"); // fallback
-                    break;
+                string pathTag = PlayerPrefs.GetString("NextLevelTag", "default");
+
+                switch (pathTag)
+                {
+                    case "Level 2 Saliva":
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 2 Salvia");
+                        break;
+                    case "Level 3 Ecstasy":
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 3 Ecstasy");
+                        break;
+                    case "Level 4":
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 4");
+                        break;
+                    default:
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1 LSD"); // fallback
+                        break;
+                }
+                return;
             }
-            return;
+            else
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("EndScreen");
+                return;
+            }
         }
 
         Question q = questions[currentIndex];
@@ -60,7 +70,15 @@ public class QuizManager : MonoBehaviour
     void OnAnswerSelected(int index)
     {
         Question q = questions[currentIndex];
-        Debug.Log(index == q.correctAnswerIndex ? "Correct!" : "Incorrect!");
+        if (index == q.correctAnswerIndex)
+        {
+            correctAnswers++;
+            Debug.Log("Correct answer selected!");
+        }
+        else
+        {
+            Debug.Log("Wrong answer selected.");
+        }
 
         currentIndex++;
         Invoke("LoadQuestion", 1.5f); // Delay to show result
