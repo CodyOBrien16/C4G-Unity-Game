@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 3 Ecstasy.unity
     guid: 9f58eec6c9e93e64eb0fd34adddba213
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: fbb3aa54006fd43faa506dc54eff4209
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: f06e7f78e18ff7d439bb7960178b8e56
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 767562df317243b46bdf669c5546c211, type: 3}
   m_UseUCBPForAssetBundles: 0
