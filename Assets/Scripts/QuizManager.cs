@@ -12,6 +12,7 @@ public class QuizManager : MonoBehaviour
     private List<Question> questions;
     private int currentIndex = 0;
     private int correctAnswers = 0;
+    public FeedbackPopup feedbackPopup; // Drag this in Inspector
 
     void Start()
     {
@@ -73,10 +74,12 @@ public class QuizManager : MonoBehaviour
         if (index == q.correctAnswerIndex)
         {
             correctAnswers++;
+            feedbackPopup.ShowMessage("Correct!", true);
             Debug.Log("Correct answer selected!");
         }
         else
         {
+            feedbackPopup.ShowMessage("Wrong!", false);
             Debug.Log("Wrong answer selected.");
         }
 
