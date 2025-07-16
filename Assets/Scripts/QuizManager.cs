@@ -9,6 +9,8 @@ public class QuizManager : MonoBehaviour
     public TMP_Text questionText;
     public Button[] answerButtons;
 
+    public TMP_Text progressText; // Optional, for showing progress
+
     private List<Question> questions;
     private int currentIndex = 0;
     private int correctAnswers = 0;
@@ -83,6 +85,7 @@ public class QuizManager : MonoBehaviour
             Debug.Log("Wrong answer selected.");
         }
 
+        progressText.text = $"{correctAnswers}/{currentIndex + 1} correct";
         currentIndex++;
         Invoke("LoadQuestion", 1.5f); // Delay to show result
     }
