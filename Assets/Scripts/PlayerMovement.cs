@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private bool jumpPressed;
 
     private PlayerControls controls;
+    private SpriteRenderer spriteRenderer;
 
     void Awake()
     {
@@ -35,12 +36,19 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>(); // Get the SpriteRenderer
     }
 
     void Update()
     {
         // Ground check
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        // Flip sprite based on movement direction
+        if (moveInput.x < 0)
+            spriteRenderer.flipX = true;
+        else if (moveInput.x > 0)
+            spriteRenderer.flipX = false;
     }
 
     void FixedUpdate()
