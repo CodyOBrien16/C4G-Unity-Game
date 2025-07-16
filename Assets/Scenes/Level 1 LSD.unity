@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Arena
-  csvFileName: lsd_questions.csv
+  csvFileName: LSD_quiz.csv
   portalTag: Level 2 Saliva
 --- !u!70 &618273739
 CapsuleCollider2D:
