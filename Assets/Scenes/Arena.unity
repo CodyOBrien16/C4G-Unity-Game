@@ -370,7 +370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97.914, y: -135.24}
+  m_AnchoredPosition: {x: -76.00101, y: -136.16}
   m_SizeDelta: {x: 210.127, y: 64.687}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &275568318
@@ -763,7 +763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109, y: -135.08}
+  m_AnchoredPosition: {x: 130.913, y: -136}
   m_SizeDelta: {x: 203.6995, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697618570
@@ -1019,8 +1019,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 594, y: 334}
+  m_AnchoredPosition: {x: 0.000030518, y: 0}
+  m_SizeDelta: {x: 705, y: 397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037680368
 MonoBehaviour:
@@ -1279,7 +1279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 109, y: -70.08}
+  m_AnchoredPosition: {x: 130.913, y: -71}
   m_SizeDelta: {x: 203.7, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1138211524
@@ -1536,7 +1536,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97.913, y: -70.08}
+  m_AnchoredPosition: {x: -76, y: -71}
   m_SizeDelta: {x: 210.13, y: 63.472}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1356227280
@@ -1723,8 +1723,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.935913, y: -102.29001}
-  m_SizeDelta: {x: -180.17, y: -204.58}
+  m_AnchoredPosition: {x: 25.850494, y: -103.880005}
+  m_SizeDelta: {x: -291.17, y: -267.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1670651668
 MonoBehaviour:
@@ -1738,7 +1738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: a00013af81304728b2be1f4309ee2433, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
