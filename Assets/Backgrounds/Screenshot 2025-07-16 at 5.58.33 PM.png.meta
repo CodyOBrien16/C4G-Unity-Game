@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6bc41de2dcace44708206d2865202b35
+guid: 77bc6599e78134f84aab75634e736a16
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5081022824573301541
-    second: stGame_0
+      213: 10648247630712004
+    second: "Screenshot 2025-07-16 at 5.58.33\u202FPM_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stGame_0
+      name: "Screenshot 2025-07-16 at 5.58.33\u202FPM_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 666
-        height: 375
+        width: 1366
+        height: 776
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 523f75aa65b638640800000000000000
-      internalID: 5081022824573301541
+      spriteID: 4cc42895684d52000800000000000000
+      internalID: 10648247630712004
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      stGame_0: 5081022824573301541
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
