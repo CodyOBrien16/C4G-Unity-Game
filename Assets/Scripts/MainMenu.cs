@@ -16,4 +16,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("StartScreen");
     }
+
+    public void DrugInfo()
+    {
+        SceneManager.LoadSceneAsync("Information");
+    }
 }
