@@ -27,17 +27,6 @@ public class SlideShowUI : MonoBehaviour
         UpdateSlide();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            PreviousSlide();
-        }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            NextSlide();
-        }
-    }
 
     void PreviousSlide()
     {
