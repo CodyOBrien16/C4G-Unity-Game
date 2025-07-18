@@ -384,7 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Arena
   csvFileName: ecstasy_quiz.csv
-  portalTag: Level 3 Ecstasy
+  portalTag: WinScreen
 --- !u!212 &618273740
 SpriteRenderer:
   m_ObjectHideFlags: 0
