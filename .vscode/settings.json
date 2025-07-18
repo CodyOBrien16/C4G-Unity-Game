@@ -66,5 +66,5 @@
     "explorer.fileNesting.patterns": {
         "*.sln": "*.csproj"
     },
-    "dotnet.defaultSolution": "C4G-Unity-Game.sln"
+    "dotnet.defaultSolution": "2D Test.sln"
 }
