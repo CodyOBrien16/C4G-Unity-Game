@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 4177f91e9acb04458874ee045542937a
+guid: 39cc6129c54b30442bfbd2bad3c03e52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5798276956041067383
-    second: Add a heading_0
+      213: 2741492423818337783
+    second: bruporin_final_0
+  - first:
+      213: -8949619728485304127
+    second: bruporin_final_1
+  - first:
+      213: -4693587153394614553
+    second: bruporin_final_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +102,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Add a heading_0
+      name: bruporin_final_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 105
+        y: 135
+        width: 698
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 984c6dd34d1688fa0800000000000000
-      internalID: -5798276956041067383
+      spriteID: 7fddd1c95dcbb0620800000000000000
+      internalID: 2741492423818337783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bruporin_final_1
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 120
+        width: 95
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c83ec826409cc380800000000000000
+      internalID: -8949619728485304127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bruporin_final_2
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 120
+        width: 182
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eeb3970a570ddeb0800000000000000
+      internalID: -4693587153394614553
       vertices: []
       indices: 
       edges: []
@@ -147,8 +184,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Add a heading_0: -5798276956041067383
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
