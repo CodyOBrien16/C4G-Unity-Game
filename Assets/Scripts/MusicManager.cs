@@ -30,6 +30,6 @@ public class MusicManager : MonoBehaviour
         {
             if (!GetComponent<AudioSource>().isPlaying)
                 GetComponent<AudioSource>().Play();
-        }
+       }
     }
 }
