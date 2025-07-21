@@ -6,7 +6,7 @@ public class Portal : MonoBehaviour
     public string sceneToLoad = "Arena";
     public string csvFileName = "default.csv"; // Assign this in the Inspector
 
-    public string portalTag = "Level 2";
+    public string portalTag = "";
 
     void OnTriggerEnter2D(Collider2D other)
     {

@@ -40,11 +40,26 @@ public class QuizManager : MonoBehaviour
                     case "Level 3 Ecstasy":
                         UnityEngine.SceneManagement.SceneManager.LoadScene("Level 3 Ecstasy");
                         break;
-                    case "Level 4":
-                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 4");
+                    case "Level 4 - Benzodiazepines":
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 4 - Benzodiazepines");
+                        break;
+                    case "Level 5 - Bupropion":
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 5 - Bupropion");
+                        break;
+                    case "Level 6 - Fentanyl":
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 6 - Fentanyl");
+                        break;
+                    case "Level 7 - Morphine":
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 7 - Morphine");
+                        break;
+                    case "Level 8 - Codeine":
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 8 - Codeine");
+                        break;
+                    case "FinalScreen":
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("FinalScreen");
                         break;
                     default:
-                        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1 LSD"); // fallback
+                        UnityEngine.SceneManagement.SceneManager.LoadScene("StartScreen"); // fallback
                         break;
                 }
                 return;
