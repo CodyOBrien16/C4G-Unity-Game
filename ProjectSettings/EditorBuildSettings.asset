@@ -6,21 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Level 1 LSD.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/Arena.unity
-    guid: 129e66b0a0a531d4a827969fba7d165c
-  - enabled: 1
-    path: Assets/Scenes/Level 2 Salvia.unity
-    guid: d3e549e82ec9c29468c7a632801cef8e
-  - enabled: 1
-    path: Assets/Scenes/Level 3 Ecstasy.unity
-    guid: 9f58eec6c9e93e64eb0fd34adddba213
-  - enabled: 1
-    path: Assets/Scenes/EndScreen.unity
-    guid: fbb3aa54006fd43faa506dc54eff4209
-  - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: f06e7f78e18ff7d439bb7960178b8e56
   - enabled: 1
@@ -32,5 +17,38 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: 21287a561568d4d21a4700d3a6f127b5
+  - enabled: 1
+    path: Assets/Scenes/Level 1 LSD.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Level 2 Salvia.unity
+    guid: d3e549e82ec9c29468c7a632801cef8e
+  - enabled: 1
+    path: Assets/Scenes/Level 3 Ecstasy.unity
+    guid: 9f58eec6c9e93e64eb0fd34adddba213
+  - enabled: 1
+    path: Assets/Scenes/Level 4 Benzodiazepines.unity
+    guid: 26ab1324b093faf419bbfb13b2dc97b7
+  - enabled: 1
+    path: Assets/Scenes/Level 5 - Bupropion.unity
+    guid: 32978295d58d8504785e98cbb0dea1e1
+  - enabled: 1
+    path: Assets/Scenes/Level 6 - Fentanyl.unity
+    guid: ffcceaec8c6c45246b17dcbc6c807799
+  - enabled: 1
+    path: Assets/Scenes/Level 7 - Morphine.unity
+    guid: 67c08f74c3e6c5944beaeeda16f8f2f2
+  - enabled: 1
+    path: Assets/Scenes/Level 8 - Codeine.unity
+    guid: 3f49fcfdd12c61c43a46866013fd2c28
+  - enabled: 1
+    path: Assets/Scenes/Arena.unity
+    guid: 129e66b0a0a531d4a827969fba7d165c
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: fbb3aa54006fd43faa506dc54eff4209
+  - enabled: 1
+    path: Assets/Scenes/FinalScreen.unity
+    guid: 21218b9f50445934191c5b4375c75cd9
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

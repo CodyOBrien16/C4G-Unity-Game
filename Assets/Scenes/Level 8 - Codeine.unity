@@ -636,7 +636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Arena
   csvFileName: Codeine_quiz.csv
-  portalTag: WinScreen
+  portalTag: FinalScreen
 --- !u!212 &618273740
 SpriteRenderer:
   m_ObjectHideFlags: 0
