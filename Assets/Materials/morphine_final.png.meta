@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 4177f91e9acb04458874ee045542937a
+guid: d970c684bfc66d047a2ca3c68a6f18f2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5798276956041067383
-    second: Add a heading_0
+      213: -5401776993818036768
+    second: morphine_final_0
+  - first:
+      213: 3948010887991284256
+    second: morphine_final_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +99,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Add a heading_0
+      name: morphine_final_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 188
+        y: 296
+        width: 684
+        height: 537
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 984c6dd34d1688fa0800000000000000
-      internalID: -5798276956041067383
+      spriteID: 0e53997a1780905b0800000000000000
+      internalID: -5401776993818036768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: morphine_final_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 235
+        width: 444
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02258143cf62ac630800000000000000
+      internalID: 3948010887991284256
       vertices: []
       indices: 
       edges: []
@@ -147,8 +159,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Add a heading_0: -5798276956041067383
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
